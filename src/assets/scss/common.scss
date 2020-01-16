@@ -1,0 +1,149 @@
+.main_content{
+	flex-basis: 100%;
+	width: 0;
+	min-width: 0;
+	max-width: 100%;
+	background: #fff;
+}
+
+@font-face {
+	font-family: ox_b;
+	src: url(fonts/Oxygen-Bold.ttf);
+}
+@font-face {
+	font-family: ox_l;
+	src: url(fonts/Oxygen-Light.ttf);
+}
+@font-face {
+	font-family: ox_r;
+	src: url(fonts/Oxygen-Regular.ttf);
+}
+/* width */
+/* Track */
+/* Handle */
+/* Handle on hover */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: ox_r;
+	font-size: .8125rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #747a80;
+	text-align: left;
+}
+h1 {
+	font-family: ox_b;
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+h2 {
+	font-family: ox_b;
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+h3 {
+	font-family: ox_b;
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+h4 {
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+h5 {
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+p {
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ul {
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none !important;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.bold {
+	font-family: ox_b;
+}
+.btn {
+	border: 2px solid rgb( 171, 171, 171 );
+	border-radius: 5px;
+	font-size: 17px;
+	color: #ababab;
+	background: transparent;
+	font-family: ox_b;
+	transition: 0.6s ease;
+	&:hover {
+		background: #eee;
+		color: #000;
+	}
+}
+.g_wrapper {
+	.body_part {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	.g_wrapper {
+		.main_content{
+			display: block;
+			width: 100%;
+		}
+		.body_part {
+			display: block;
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 100% !important;
+	}
+	.btn {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 96%;
+	}
+}
+@media screen and (min-width: 1550px) {
+	.btn {
+		font-size: 20px;
+	}
+}

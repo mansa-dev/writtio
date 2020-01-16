@@ -3,11 +3,11 @@
   <div  class="container">
     <div class="main_nav">
       <div class="backbtn">
-        <a class="bold" href="#"> <img src="images/back_arrow.png" alt="back_arrow"> Back to Dashboard</a>
+        <a class="bold" href="#"> <img src="/images/back_arrow.png" alt="back_arrow"> Back to Dashboard</a>
       </div>
       <div class="navbar_brand logo">
         <a href="#">
-          <img src="images/logo.png" slt="logo">
+          <img src="/images/logo.png" slt="logo">
         </a>
         <div class="toggle_btn">
           <span class="line"></span>
@@ -18,7 +18,7 @@
       <div class="support_area">
             <div class="mobile logo">
              <a href="#">
-               <img src="images/logo.png" slt="logo">
+               <img src="/images/logo.png" slt="logo">
              </a>
              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
            </div>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import './header.scss'
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component

@@ -9,14 +9,20 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    redirect: 'billing',
+    redirect: 'user/billing',
     component: Home
   }, {
-    path: '/billing',
+    path: '/user',
     component: WrittioUser,
     children: [{
-      path: '',
+      path: 'billing',
       component: () => import('../features/user/billing/billing.vue')
+    }, {
+      path: 'plan',
+      component: () => import('../features/user/plan/plan.vue')
+    }, {
+      path: 'settings',
+      component: () => import('../features/user/settings/settings.vue')
     }]
   }
 ]

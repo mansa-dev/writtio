@@ -8,7 +8,7 @@
           </div>
           <div id="billinghistory" class="tab-pane active">
             <div class="billing_info_stuc">
-              <div class="billing_head">
+              <div class="billing_head text-left">
                 <h1>Billing Information</h1>
                 <div class="method_pay">
                   <div class="last_pay_his">
@@ -17,7 +17,7 @@
                  </div>
                  <div class="card_select">
                   <div class="icon">
-                    <img src="images/card-icon.png">
+                    <img src="/images/card-icon.png">
                   </div>
                   <div class="text">
                     <p class="mt_p">{{userdata.card_details.ending}}</p>
@@ -52,6 +52,7 @@
 </template>
 
 <script lang="ts">
+import './billing.scss'
 import { Component, Vue } from 'vue-property-decorator'
 import dates from '../../../store/dates.store'
 

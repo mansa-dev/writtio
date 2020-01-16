@@ -1,0 +1,314 @@
+.g_wrapper {
+	.main_content {
+		.eqaul_padding {
+			padding: 50px 60px;
+			.tab-content {
+				width: 70%;
+			}
+		}
+		.tab-content {
+			.billing_info_stuc {
+				.billing_history {
+					border-top: 2px solid rgb( 243, 243, 243 );
+					padding: 20px 0px;
+					.billing_history_head {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						margin-bottom: 20px;
+						span.title_tag {
+							font-size: 28px;
+							font-family: ox_b;
+						}
+						span.date_next {
+							font-size: 18px;
+						}
+					}
+					ul {
+						li {
+							&:first-child {
+								border-bottom: 0;
+								padding-top: 0;
+							}
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							border-bottom: 2px solid rgb( 243, 243, 243 );
+							padding: 10px 0px;
+							span {
+								color: #000000;
+								font-size: 16px;
+							}
+							span.date_text {
+								font-size: 16px;
+								color: #ababab;
+								font-family: ox_b;
+							}
+							span.amount_text {
+								font-size: 16px;
+								color: #ababab;
+								font-family: ox_b;
+							}
+						}
+					}
+					.button_load_more {
+						padding-top: 30px;
+						.btn {
+							width: 200px;
+							height: 50px;
+							margin: 0 auto;
+							display: block;
+						}
+					}
+				}
+				.billing_head {
+					h1 {
+						font-size: 28px;
+					}
+					.method_pay {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 20px 0px;
+						.mt_p {
+							color: #000000;
+							font-size: 16px;
+						}
+						.card_select {
+							span {
+								font-size: 14px;
+								color: #ababab;
+								margin-bottom: 3px;
+							}
+							display: flex;
+							align-items: center;
+							.icon {
+								margin-right: 10px;
+							}
+						}
+						.update_btn {
+							.btn {
+								width: 150px;
+								height: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.g_wrapper {
+		.main_content {
+			.eqaul_padding {
+				.tab-content {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				.billing_info_stuc {
+					.billing_head {
+						h1 {
+							font-size: 23px;
+						}
+						.method_pay {
+							.mt_p {
+								font-size: 14px;
+							}
+							.update_btn {
+								.btn {
+									width: 100px;
+									height: 35px;
+								}
+							}
+						}
+					}
+					.billing_history {
+						.billing_history_head {
+							span.title_tag {
+								font-size: 23px;
+							}
+							span.date_next {
+								font-size: 16px;
+							}
+						}
+						ul {
+							li {
+								span {
+									font-size: 14px;
+								}
+								span.date_text {
+									font-size: 14px;
+								}
+								span.amount_text {
+									font-size: 14px;
+								}
+							}
+						}
+						.button_load_more {
+							.btn {
+								width: 160px;
+								height: 43px;
+							}
+						}
+					}
+				}
+			}
+			.eqaul_padding {
+				padding: 50px 35px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.g_wrapper {
+		.main_content {
+			.eqaul_padding {
+				padding: 30px 30px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 640px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				.billing_info_stuc {
+					.billing_head {
+						.method_pay {
+							display: block;
+							.last_pay_his {
+								display: block;
+								width: 100%;
+								margin-bottom: 20px;
+							}
+							.card_select {
+								display: block;
+								width: 100%;
+								margin-bottom: 20px;
+							}
+						}
+					}
+					.billing_history {
+						.billing_history_head {
+							display: block;
+							width: 100%;
+							span.title_tag {
+								display: inline-block;
+								width: 100%;
+								margin-bottom: 10px;
+							}
+							span.date_next {
+								display: inline-block;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				.billing_info_stuc {
+					.billing_head {
+						h1 {
+							font-size: 20px;
+						}
+					}
+					.billing_history {
+						.billing_history_head {
+							span.title_tag {
+								font-size: 20px;
+							}
+							span.date_next {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+			.eqaul_padding {
+				padding: 30px 15px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1550px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				.billing_info_stuc {
+					.billing_history {
+						ul {
+							li {
+								span {
+									color: #000000;
+									font-size: 21px;
+								}
+								span.date_text {
+									font-size: 18px;
+								}
+								span.amount_text {
+									font-size: 18px;
+								}
+							}
+						}
+						.button_load_more {
+							.btn {
+								width: 248px;
+								height: 61px;
+							}
+						}
+						.billing_history_head {
+							span.title_tag {
+								font-size: 34px;
+							}
+							span.date_next {
+								font-size: 21px;
+							}
+						}
+					}
+					.billing_head {
+						h1 {
+							font-size: 34px;
+						}
+						.method_pay {
+							.mt_p {
+								font-size: 21px;
+							}
+							.card_select {
+								span {
+									font-size: 18px;
+									color: #ababab;
+								}
+							}
+							.update_btn {
+								.btn {
+									width: 180px;
+									height: 46px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.eqaul_padding {
+				.tab-content {
+					width: 767px;
+				}
+				padding: 50px 100px;
+			}
+		}
+	}
+}

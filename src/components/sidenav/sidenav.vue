@@ -14,19 +14,25 @@
     <div class="tabs_struc">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#profilesetting">
-            <i class="fa fa-user" aria-hidden="true"></i> Profile Settings
-          </a>
+          <router-link to="/user/settings">
+            <a class="nav-link" data-toggle="tab">
+              <i class="fa fa-user" aria-hidden="true"></i> Profile Settings
+            </a>
+          </router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#myplan">
-            <i class="fa fa-tags" aria-hidden="true"></i> My Plan
-          </a>
+          <router-link to="/user/plan">
+            <a class="nav-link" data-toggle="tab" href="/user/plan">
+              <i class="fa fa-tags" aria-hidden="true"></i> My Plan
+            </a>
+          </router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#billinghistory">
-            <i class="fa fa-credit-card" aria-hidden="true"></i> Billng History
-          </a>
+          <router-link to="/user/billing">
+            <a class="nav-link" data-toggle="tab" href="#billinghistory">
+              <i class="fa fa-credit-card" aria-hidden="true"></i> Billng History
+            </a>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -35,6 +41,7 @@
 </template>
 
 <script>
+import './sidenav.scss'
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
