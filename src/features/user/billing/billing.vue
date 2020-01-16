@@ -13,7 +13,7 @@
                 <div class="method_pay">
                   <div class="last_pay_his">
                    <p class="mt_p bold"> Last payment: </p>
-                   <p class="mt_p"> {{userdata.last_payment}}</p>
+                   <p class="mt_p"> {{userdata.last_payment | formatDate}}</p>
                  </div>
                  <div class="card_select">
                   <div class="icon">
@@ -36,7 +36,7 @@
             </div>
             <ul>
               <li v-for="date of userdata.payment_history" v-bind:key="date.id">
-                <span class="date_text">{{ date.date}}</span>
+                <span class="date_text">{{ date.date | formatDate}}</span>
                 <span class="amount_text">${{date.amount}}</span>
               </li>
             </ul>
@@ -55,6 +55,12 @@
 import './billing.scss'
 import { Component, Vue } from 'vue-property-decorator'
 import dates from '../../../store/dates.store'
+import moment from 'moment'
+Vue.filter('formatDate', (value:any) => {
+  if (value) {
+    return moment(String(value)).format('MM/DD/YYYY')
+  }
+})
 
 @Component
 export default class UserBilling extends Vue {

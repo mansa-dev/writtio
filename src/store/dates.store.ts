@@ -7,11 +7,11 @@ export default new Vuex.Store({
   state: {
     userdate: {
       card_details: { ending: '1234', expiry: '01/2024', image: 'linktoimage' },
-      last_payment: '15-12-2019',
+      last_payment: new Date(),
       payment_history: [
-        { 'date': '20-5-2012', 'amount': '200' },
-        { 'date': '20-5-2014', 'amount': '260' },
-        { 'date': '20-5-2016', 'amount': '300' }
+        { 'date': new Date(), 'amount': '200' },
+        { 'date': new Date(), 'amount': '260' },
+        { 'date': new Date(), 'amount': '300' }
       ] }
   },
   mutations: {
