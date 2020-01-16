@@ -1,88 +1,53 @@
 <template>
-  <div class="body_part">
-  <div class="sidebar_area">
-    <aside id="sidebar_wrapper">
-      <div class="user_basic_info">
-        <div class="pfimage">
-         <img src="">
-       </div>
-       <div class="user_info">
-         <h1 class="name">
-          Sample User
-        </h1>
-      </div>
-    </div>
-    <div class="tabs_struc">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#profilesetting">
-            <i class="fa fa-user" aria-hidden="true"></i> Profile Settings
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#myplan">
-            <i class="fa fa-tags" aria-hidden="true"></i> My Plan
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#billinghistory">
-            <i class="fa fa-credit-card" aria-hidden="true"></i> Billng History
-          </a>
-        </li>
-      </ul>
-    </div>
-  </aside>
-</div>
-<div class="main_content">
-  <div class="eqaul_padding">
-    <div class="tab-content">
-      <div id="profilesetting" class="tab-pane fade">
-      </div>
-      <div id="myplan" class="tab-pane fade">
-      </div>
-      <div id="billinghistory" class="tab-pane active">
-        <div class="billing_info_stuc">
-          <div class="billing_head">
-            <h1>Billing Information</h1>
-            <div class="method_pay">
-              <div class="last_pay_his">
-               <p class="mt_p bold"> Last payment: </p>
-               <p class="mt_p"> {{userdata.last_payment}}</p>
-             </div>
-             <div class="card_select">
-              <div class="icon">
-                <img src="images/card-icon.png">
-              </div>
-              <div class="text">
-                <p class="mt_p">{{userdata.card_details.ending}}</p>
-                <span>Expires: {{userdata.card_details.expiry}}</span>
+    <div class="main_content">
+      <div class="eqaul_padding">
+        <div class="tab-content">
+          <div id="profilesetting" class="tab-pane fade">
+          </div>
+          <div id="myplan" class="tab-pane fade">
+          </div>
+          <div id="billinghistory" class="tab-pane active">
+            <div class="billing_info_stuc">
+              <div class="billing_head">
+                <h1>Billing Information</h1>
+                <div class="method_pay">
+                  <div class="last_pay_his">
+                   <p class="mt_p bold"> Last payment: </p>
+                   <p class="mt_p"> {{userdata.last_payment}}</p>
+                 </div>
+                 <div class="card_select">
+                  <div class="icon">
+                    <img src="images/card-icon.png">
+                  </div>
+                  <div class="text">
+                    <p class="mt_p">{{userdata.card_details.ending}}</p>
+                    <span>Expires: {{userdata.card_details.expiry}}</span>
+                  </div>
+                </div>
+                <div class="update_btn">
+                  <button type="button" class="btn">Update</button>
+                </div>
               </div>
             </div>
-            <div class="update_btn">
-              <button type="button" class="btn">Update</button>
+            <div class="billing_history">
+             <div class="billing_history_head">
+              <span class="title_tag">Billing History</span>
+              <span class="date_next">Next payment on <b> 10/25/2019</b> </span>
+            </div>
+            <ul>
+              <li v-for="date of userdata.payment_history" v-bind:key="date.id">
+                <span class="date_text">{{ date.date}}</span>
+                <span class="amount_text">${{date.amount}}</span>
+              </li>
+            </ul>
+            <div class="button_load_more">
+              <button type="button" class="btn">Load More</button>
             </div>
           </div>
         </div>
-        <div class="billing_history">
-         <div class="billing_history_head">
-          <span class="title_tag">Billing History</span>
-          <span class="date_next">Next payment on <b> 10/25/2019</b> </span>
-        </div>
-        <ul>
-          <li v-for="date of userdata.payment_history" v-bind:key="date.id">
-            <span class="date_text">{{ date.date}}</span>
-            <span class="amount_text">${{date.amount}}</span>
-          </li>
-        </ul>
-        <div class="button_load_more">
-          <button type="button" class="btn">Load More</button>
-        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-</div>
+    </div>
     </div>
 </template>
 
