@@ -13,25 +13,22 @@
     </div>
     <div class="tabs_struc">
       <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <router-link to="/user/settings">
-            <a class="nav-link" data-toggle="tab">
-              <i class="fa fa-user" aria-hidden="true"></i> Profile Settings
-            </a>
+        <li class="nav-item" title="Profile Settings">
+              <router-link to="/user/settings" class="nav-link">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>Profile Settings</span>
           </router-link>
         </li>
-        <li class="nav-item">
-          <router-link to="/user/plan">
-            <a class="nav-link" data-toggle="tab" href="/user/plan">
-              <i class="fa fa-tags" aria-hidden="true"></i> My Plan
-            </a>
+        <li class="nav-item" title="My Plan">
+          <router-link to="/user/plan" class="nav-link">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              <span>My Plan</span>
           </router-link>
         </li>
-        <li class="nav-item">
-          <router-link to="/user/billing">
-            <a class="nav-link" data-toggle="tab" href="#billinghistory">
-              <i class="fa fa-credit-card" aria-hidden="true"></i> Billng History
-            </a>
+        <li class="nav-item" title="Billng History">
+          <router-link to="/user/billing" class="nav-link">
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <span>Billng History</span>
           </router-link>
         </li>
       </ul>

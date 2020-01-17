@@ -1,11 +1,5 @@
 .g_wrapper {
 	.main_content {
-		.eqaul_padding {
-			padding: 50px 60px;
-			.tab-content {
-				width: 70%;
-			}
-		}
 		.tab-content {
 			.billing_info_stuc {
 				.billing_history {
@@ -19,9 +13,11 @@
 						span.title_tag {
 							font-size: 28px;
 							font-family: ox_b;
+							color: #666666;
 						}
 						span.date_next {
 							font-size: 18px;
+							color: #666666;
 						}
 					}
 					ul {
@@ -34,7 +30,7 @@
 							align-items: center;
 							justify-content: space-between;
 							border-bottom: 2px solid rgb( 243, 243, 243 );
-							padding: 10px 0px;
+							padding: 15px 0px;
 							span {
 								color: #000000;
 								font-size: 16px;
@@ -52,7 +48,7 @@
 						}
 					}
 					.button_load_more {
-						padding-top: 30px;
+						padding-top: 50px;
 						.btn {
 							width: 200px;
 							height: 50px;
@@ -64,6 +60,7 @@
 				.billing_head {
 					h1 {
 						font-size: 28px;
+						color: #666666;
 					}
 					.method_pay {
 						display: flex;
@@ -98,17 +95,7 @@
 		}
 	}
 }
-@media screen and (max-width: 1200px) {
-	.g_wrapper {
-		.main_content {
-			.eqaul_padding {
-				.tab-content {
-					width: 100%;
-				}
-			}
-		}
-	}
-}
+
 @media screen and (max-width: 991px) {
 	.g_wrapper {
 		.main_content {
@@ -161,17 +148,22 @@
 					}
 				}
 			}
-			.eqaul_padding {
-				padding: 50px 35px;
-			}
 		}
 	}
 }
 @media screen and (max-width: 768px) {
 	.g_wrapper {
 		.main_content {
-			.eqaul_padding {
-				padding: 30px 30px;
+			.tab-content {
+				.billing_info_stuc {
+					.billing_history {
+						.button_load_more {
+							.btn {
+								width: 100%;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -237,9 +229,6 @@
 						}
 					}
 				}
-			}
-			.eqaul_padding {
-				padding: 30px 15px;
 			}
 		}
 	}

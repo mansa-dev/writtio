@@ -2,10 +2,6 @@
     <div class="main_content">
       <div class="eqaul_padding">
         <div class="tab-content">
-          <div id="profilesetting" class="tab-pane fade">
-          </div>
-          <div id="myplan" class="tab-pane fade">
-          </div>
           <div id="billinghistory" class="tab-pane active">
             <div class="billing_info_stuc">
               <div class="billing_head text-left">
@@ -35,9 +31,13 @@
               <span class="date_next">Next payment on <b> 10/25/2019</b> </span>
             </div>
             <ul>
+            <li>
+                <span class="date_text">DATE</span>
+                <span class="amount_text">AMOUNT</span>
+              </li>
               <li v-for="date of userdata.payment_history" v-bind:key="date.id">
-                <span class="date_text">{{ date.date | formatDate}}</span>
-                <span class="amount_text">${{date.amount}}</span>
+                <span class="date">{{ date.date | formatDate}}</span>
+                <span class="amount">${{date.amount}}</span>
               </li>
             </ul>
             <div class="button_load_more">

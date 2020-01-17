@@ -1,0 +1,132 @@
+.g_wrapper {
+	.main_content {
+		.tab-content {
+			#profilesetting {
+				.profilesetting_stuc{
+					.profilesetting_stuc_heading{
+						margin-bottom:35px;
+						h1 {
+							font-size: 28px;
+							color: #666666;
+						}
+					}
+					.profilesetting_stuc_user_info{
+						.profilesetting_stuc_user_info_ul{
+							.profilesetting_stuc_user_info_ul_list{
+								display: -webkit-box;
+								display: -ms-flexbox;
+								display: flex;
+								-webkit-box-align: center;
+								-ms-flex-align: center;
+								align-items: center;
+								-webkit-box-pack: justify;
+								-ms-flex-pack: justify;
+								justify-content: space-between;
+								border-bottom: 2px solid #f3f3f3;
+								padding: 15px 0px;
+								color: #000000;
+								font-size: 16px;
+								.profilesetting_stuc_user_info_ul_list_label{
+									color: #ababab;
+									font-family: ox_b;
+								}
+								.profilesetting_stuc_user_info_ul_list_info{
+									width: 45%;
+									text-align: left;
+								}
+							}
+						}
+						.profilesetting_stuc_user_info_edit_profile_btn{
+							padding-top: 50px;
+							text-align: left;
+							button{
+								width: 190px;
+								height: 45px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				#profilesetting {
+					.profilesetting_stuc{
+						.profilesetting_stuc_heading{
+							h1 {
+								font-size: 23px;
+							}
+						}
+						.profilesetting_stuc_user_info{
+							.profilesetting_stuc_user_info_ul{
+								.profilesetting_stuc_user_info_ul_list{
+									font-size: 14px;
+								}
+							}
+							.profilesetting_stuc_user_info_edit_profile_btn{
+								button{
+									width: 160px;
+									height: 43px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				#profilesetting {
+					.profilesetting_stuc{
+						.profilesetting_stuc_user_info{
+							.profilesetting_stuc_user_info_edit_profile_btn{
+								button{
+									width: 100%;
+									height: 43px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1550px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				#profilesetting {
+					.profilesetting_stuc{
+						.profilesetting_stuc_heading{
+							h1 {
+								font-size: 36px;
+							}
+						}
+						.profilesetting_stuc_user_info{
+							.profilesetting_stuc_user_info_ul{
+								.profilesetting_stuc_user_info_ul_list{
+									font-size: 21px;
+								}
+							}
+							.profilesetting_stuc_user_info_edit_profile_btn{
+								button{
+									width: 240px;
+									height: 60px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

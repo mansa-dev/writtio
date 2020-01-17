@@ -24,6 +24,7 @@
 					.name {
 						font-size: 24px;
 						text-align: center;
+						color: #666666;
 					}
 				}
 			}
@@ -39,6 +40,9 @@
 							background: #eee;
 							border-color: #3092ff;
 							color: #666666;
+							i {
+								color: #3092ff;
+							}
 						}
 						a {
 							height: 58px;
@@ -55,14 +59,6 @@
 							letter-spacing: 0.02em;
 							i {
 								margin-right: 10px;
-							}
-						}
-						a.active {
-							background: #eee;
-							border-color: #3092ff;
-							color: #666666;
-							i {
-								color: #3092ff;
 							}
 						}
 					}
@@ -105,8 +101,9 @@
 	.g_wrapper {
 		.sidebar_area {
 			width: 100%;
-			background: #eaeaea;
+			background: #ffffff;
 			padding: 35px 0px;
+			border-bottom: 15px solid #f5f5f5;
 			#sidebar_wrapper {
 				.user_basic_info {
 					.user_info {
@@ -122,19 +119,36 @@
 							margin: 0 5px;
 							a {
 								height: auto;
-								display: inline-block;
+								display: flex;
 								margin: 0;
-								border: 1px solid #000;
+								border: 0;
 								border-radius: 3px;
-								color: #000;
-								i {
+								color: #ababab;
+								width: 70px;
+								height: 60px;
+								border-radius: 10px;
+								align-items: center;
+								justify-content: center;
+								position: relative;
+								span {
 									display: none;
 								}
+								i{
+									margin:0;
+								}
 							}
-							a.active {
-								background: #3092ff;
-								border-color: #3092ff;
-								color: #fff;
+							a.router-link-active {
+								background: #eee;
+								color: #3092ff;
+								&:before{
+									content: "";
+									width: 8px;
+									height: 8px;
+									background: #3092ff;
+									position: absolute;
+									top: 8px;
+									border-radius: 50%;
+								}
 							}
 						}
 						display: inline-block;
