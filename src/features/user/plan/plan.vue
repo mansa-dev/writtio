@@ -88,7 +88,7 @@
     You will be automatically billed for overages. We will send out two emails as your plan nears its limit.
     </p>
     </div>
-    <div lass="myplan_stuc_plan_info_plan_boxes_usage_scroller">
+    <div class="myplan_stuc_plan_info_plan_boxes_usage_scroller">
     <div class="myplan_stuc_plan_info_plan_boxes_usage_scroller_usage_and_rate">
     <span class="usage">
     <span class="price">21,394</span>
@@ -98,6 +98,10 @@
     <b>Estimated cost:</b>
     $110
     </span>
+    </div>
+    <div class="scoll_main">
+    <div class="scroll_inside" style="width:50%;">
+    </div>
     </div>
     </div>
 </div>

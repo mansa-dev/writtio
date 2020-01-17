@@ -133,6 +133,26 @@
 										display: flex;
 										align-items: center;
 										justify-content: space-between;
+										font-size: 15px;
+										color: #666;
+										margin-bottom: 10px;
+										span.usage{
+											span.price{
+												font-size: 26px;
+												color: #7480ff;
+											}
+										}
+									}
+									.scoll_main{
+										width: 100%;
+										background: #eeeeee;
+										height: 10px;
+										border-radius: 10px;
+										overflow: hidden;
+										.scroll_inside{
+											background: #7480ff;
+											height: 100%;
+										}
 									}
 								}
 							}
@@ -143,6 +163,64 @@
 		}
 	}
 }
+@media screen and (max-width: 768px) {
+	.g_wrapper {
+		.main_content {
+			.tab-content {
+				#myplan {
+					.myplan_stuc {
+						.myplan_stuc_plan_info{
+							.myplan_stuc_plan_info_plan_boxes{
+								.myplan_stuc_plan_info_plan_boxes_ul {
+									display: block;
+									.myplan_stuc_plan_info_plan_boxes_ul_li{
+										width:100%;
+										margin:0;
+										&:first-child{
+											margin-bottom:30px;
+											.myplan_stuc_plan_info_plan_boxes_plan_box {
+												.myplan_stuc_plan_info_plan_boxes_plan_box_svg_image {
+													svg {
+														tspan { white-space:pre }
+														.shp0 { fill: #f9f9f9 } 
+														.shp1 { fill: #3dd458 } 
+														.shp2 { fill: #37c44a } 
+														.shp3 { fill: #e4e4e4 } 
+													}
+												}
+											}
+										}
+										&:last-child{
+											.myplan_stuc_plan_info_plan_boxes_plan_box {
+												.myplan_stuc_plan_info_plan_boxes_plan_box_svg_image {
+													svg {
+														tspan { white-space:pre }
+														.shp0 { fill: #f9f9f9 } 
+														.shp1 { fill: #e4e4e4 } 
+														.shp2 { fill: #3dd458 } 
+														.shp3 { fill: #3dd458 } 
+													}
+												}
+											}
+										}
+										&.active{
+											border: 2px solid #3cd458;
+										}
+										.myplan_stuc_plan_info_plan_boxes_current_subscription{
+											background:  #3cd458;
+										}
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 1550px) {
 	.g_wrapper {
 		.main_content {
@@ -191,6 +269,32 @@
 													width: 220px;
 													height: 44px;
 													font-size: 22px;
+												}
+											}
+										}
+									}
+								}
+								.myplan_stuc_plan_info_plan_boxes_usage{
+									.myplan_stuc_plan_info_plan_boxes_usage_head{
+										h1{
+											font-size: 26px;
+											padding-bottom: 15px;
+										}
+									}
+									.myplan_stuc_plan_info_plan_boxes_usage_content{
+										h2{
+											font-size: 22;
+										}
+										p{
+											font-size: 17x;
+										}
+									}
+									.myplan_stuc_plan_info_plan_boxes_usage_scroller{
+										.myplan_stuc_plan_info_plan_boxes_usage_scroller_usage_and_rate{
+											font-size: 18px;
+											span.usage{
+												span.price{
+													font-size: 28px;
 												}
 											}
 										}

@@ -36,14 +36,6 @@
 						width: 100%;
 						border: 0;
 						box-shadow: none;
-						.router-link-active{
-							background: #eee;
-							border-color: #3092ff;
-							color: #666666;
-							i {
-								color: #3092ff;
-							}
-						}
 						a {
 							height: 58px;
 							border: 0px;
@@ -57,8 +49,28 @@
 							background: transparent;
 							font-family: ox_b;
 							letter-spacing: 0.02em;
-							i {
+							svg{
 								margin-right: 10px;
+							}
+							svg.profile{
+								tspan { white-space:pre }
+								.shp0 { fill: #ababab } 
+								.shp1 { fill: none } 
+							}
+							svg.myplan{
+								tspan { white-space:pre }
+								.shp0 { fill: none } 
+								.shp1 { fill: #ababab } 	
+							}
+							svg.billing_history{
+								tspan { white-space:pre }
+								.shp0 { fill: none } 
+								.shp1 { fill: #ababab } 	
+							}
+							&.router-link-active{
+								background: #eee;
+								border-color: #3092ff;
+								color: #666666;
 							}
 						}
 					}
@@ -194,7 +206,6 @@
 	.g_wrapper {
 		.sidebar_area {
 			width: 400px;
-			height: 100vh;
 			#sidebar_wrapper {
 				.user_basic_info {
 					.user_info {
